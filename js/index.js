@@ -42,20 +42,35 @@ function generarNum(){
 function verificarNum(){
 
     //     - Declaramos una variable local que coge el valor del input donde el usuario va a escribir su número.
-    let = 
+    let valorInput = document.querySelector('#numeroUsuario').value
 
     //     - Ese valor lo transformamos en un número entero (parseInt).
+    valorInput = parseInt(valorInput)
+
     //     - Si el número del usuario es estrictamente igual que el número almacenado en la variable que contiene el número aleatorio:
+    if(valorInput === numAleatorio){
+
     //         - Aumentamos el valor de la variable que contiene el número de éxitos.
+    exitos ++
+
     //         - Guardamos el valor en el localStorage con la clave correspondiente al almacenamiento de éxitos.
+    localStorage.getItem('exitos')
+
     //         - Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de resultado y agregamos el contenido que queramos. Por ejemplo "¡Muy bien!".
+    inner
+
     //         - Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de estadísticas para actualizar los valores de éxito y de fallidos.
+
     //         - Llamamos a la función generadora de números para generar un nuevo número aleatorio.
+
     //     - Si no:
+    }else{
+
     //         - Aumentamos el valor de la variable que contiene el número de fallidos.
     //         - Guardamos el valor en el localStorage con la clave correspondiente al almacenamiento de fallidos.
     //         - Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de resultado y agregamos el contenido que queramos. Por ejemplo "Fallaste".
     //         - Modificamos el HTML interno del objeto que contiene el div del HTML para el texto de estadísticas para actualizar los valores de éxito y de fallidos.
+    }
 }
 
 
